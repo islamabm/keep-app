@@ -1,0 +1,16 @@
+.nav-container {
+  // position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: 15px;
+  margin-top: 7px;
+}
+.nav-link-div.active-div {
+  background-color: yellow;
+}
+
+.ai-image {
+  width: 32px;
+}

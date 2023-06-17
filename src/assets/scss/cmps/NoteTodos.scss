@@ -1,0 +1,25 @@
+.note-todos-preview {
+  padding: 1em;
+
+  .todo-preview {
+    display: flex;
+    justify-content: space-between;
+  }
+  .todo {
+    display: flex;
+    gap: 15px;
+
+    button {
+      background-color: transparent;
+      border: none;
+    }
+  }
+}
+.done {
+  text-decoration: line-through;
+}
+.dynamic-inputs {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}

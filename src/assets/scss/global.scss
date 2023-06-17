@@ -1,0 +1,76 @@
+// Externals
+
+// Setup
+@import 'setup/variables';
+@import 'setup/functions';
+@import 'setup/mixins';
+
+// Basics
+@import 'basics/typography';
+@import 'basics/base';
+@import 'basics/helpers';
+@import 'basics/layout';
+
+// Components
+
+@import 'cmps/AppHeader';
+
+@import 'cmps/AppNav.scss';
+@import 'cmps/NoteTxt.scss';
+@import 'cmps/NoteVideo.scss';
+@import 'cmps/NoteImg.scss';
+@import 'cmps/NoteList.scss';
+@import 'cmps/ColorPicker.scss';
+@import 'cmps/ImagePicker.scss';
+@import 'cmps/Picker.scss';
+@import 'cmps/NoteTodos.scss';
+@import 'cmps/FilterByType.scss';
+@import 'cmps/Canvas.scss';
+@import 'cmps/CanvasColorPicker.scss';
+@import 'cmps/CanvasImagePicker.scss';
+@import 'cmps/Signup.scss';
+@import 'cmps/UserMsg.scss';
+@import 'cmps/AddNote.scss';
+@import 'cmps/EraiserWidthPicker.scss';
+@import 'cmps/UrlModal.scss';
+@import 'cmps/ShareModal.scss';
+@import 'cmps/NoteIndex.scss';
+@import 'cmps/AddMapNote.scss';
+@import 'cmps/Loader.scss';
+@import 'cmps/AIImageGenerator.scss';
+@import 'cmps/LocationModal.scss';
+@import 'cmps/AppLoader.scss';
+@import 'cmps/Transcript.scss';
+
+// .main-app {
+//   min-height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+
+//   main {
+//     flex-grow: 1;
+//     width: 100%;
+//   }
+
+//   > footer {
+//     background-color: #111;
+//     color: white;
+//   }
+// }
+
+// .counter,
+// .timer {
+//   margin-top: 20%;
+//   border: 1px solid black;
+//   padding: 10px;
+//   text-align: center;
+// }
+
+// .counter {
+//   button:nth-of-type(2) {
+//     font-size: 2em;
+//     display: block;
+//     border: none;
+//     background-color: inherit;
+//   }
+// }

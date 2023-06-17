@@ -1,0 +1,82 @@
+.note-container {
+  border-radius: 20px;
+  position: relative;
+  padding: 0.3em;
+  height: max-content;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .note-actions-container {
+    margin-bottom: 0;
+    display: flex;
+    gap: 15px;
+    opacity: 0;
+  }
+  &:hover {
+    .note-actions-container {
+      opacity: 1;
+    }
+  }
+}
+
+.pin-icon {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+.pinned-notes-section {
+  margin-bottom: 50px;
+  // margin-top: 150px;
+}
+
+.note-container.editing {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  width: 500px;
+  height: 300px;
+}
+
+.note-container.editing::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  z-index: -1;
+}
+
+@media only screen and (max-width: 414px) {
+  .note-container.editing {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+// .note-index {
+//   display: flex;
+//   flex-wrap: wrap;
+//   align-content: flex-start;
+// }
+
+// .note-index > .note-container {
+//   align-self: flex-start;
+// }
+// .note-index {
+//   display: flex;
+//   flex-wrap: wrap;
+//   column-count: 3; /* Adjust the number of columns as needed */
+//   column-gap: 10px; /* Adjust the gap between columns as needed */
+// }
+
+// .note-index > .note-container {
+//   width: 100%; /* Ensures each item takes up the full width of the column */
+// }
